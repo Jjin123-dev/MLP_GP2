@@ -1,0 +1,8 @@
+row,configuration,changed_from_row,factor,validation_log_rmse
+1,constant baseline,,none,0.39233778745412023
+2,T1,1.0,predictor: constant to random forest,0.1537323846175646
+3,T3,2.0,maximum depth: 8 to 16,0.15039997968362245
+4,T5,3.0,maximum depth: 16 to unlimited,0.15031197577484268
+5,T6,4.0,minimum leaf size: 1 to 3,0.15228875107439638
+6,N5,1.0,predictor: constant to neural network,0.12867270801901196
+7,N6,6.0,hidden width: 64 to 128,0.12215501245324963

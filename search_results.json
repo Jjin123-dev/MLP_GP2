@@ -1,0 +1,278 @@
+{
+  "selection_rule": "lowest validation log-RMSE; first config wins exact ties",
+  "seed": 42,
+  "tree_grid": [
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 1,
+      "n_estimators": 200
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 3,
+      "n_estimators": 200
+    },
+    {
+      "max_depth": 16,
+      "min_samples_leaf": 1,
+      "n_estimators": 200
+    },
+    {
+      "max_depth": 16,
+      "min_samples_leaf": 3,
+      "n_estimators": 200
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "n_estimators": 200
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 3,
+      "n_estimators": 200
+    }
+  ],
+  "network_grid": [
+    {
+      "learning_rate": 0.0003,
+      "hidden_width": 64,
+      "batch_size": 64,
+      "weight_decay": 0.001,
+      "max_epochs": 400,
+      "patience": 35
+    },
+    {
+      "learning_rate": 0.0003,
+      "hidden_width": 128,
+      "batch_size": 64,
+      "weight_decay": 0.001,
+      "max_epochs": 400,
+      "patience": 35
+    },
+    {
+      "learning_rate": 0.001,
+      "hidden_width": 64,
+      "batch_size": 64,
+      "weight_decay": 0.001,
+      "max_epochs": 400,
+      "patience": 35
+    },
+    {
+      "learning_rate": 0.001,
+      "hidden_width": 128,
+      "batch_size": 64,
+      "weight_decay": 0.001,
+      "max_epochs": 400,
+      "patience": 35
+    },
+    {
+      "learning_rate": 0.003,
+      "hidden_width": 64,
+      "batch_size": 64,
+      "weight_decay": 0.001,
+      "max_epochs": 400,
+      "patience": 35
+    },
+    {
+      "learning_rate": 0.003,
+      "hidden_width": 128,
+      "batch_size": 64,
+      "weight_decay": 0.001,
+      "max_epochs": 400,
+      "patience": 35
+    }
+  ],
+  "configurations": [
+    {
+      "family": "trees",
+      "config_id": "T1",
+      "hyperparameters": {
+        "max_depth": 8,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      "validation_log_rmse": 0.1537323846175646,
+      "runtime_seconds": 0.8409164999902714
+    },
+    {
+      "family": "trees",
+      "config_id": "T2",
+      "hyperparameters": {
+        "max_depth": 8,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      "validation_log_rmse": 0.15418710753925274,
+      "runtime_seconds": 0.7590156999940518
+    },
+    {
+      "family": "trees",
+      "config_id": "T3",
+      "hyperparameters": {
+        "max_depth": 16,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      "validation_log_rmse": 0.15039997968362245,
+      "runtime_seconds": 1.2287306000071112
+    },
+    {
+      "family": "trees",
+      "config_id": "T4",
+      "hyperparameters": {
+        "max_depth": 16,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      "validation_log_rmse": 0.15230172210416398,
+      "runtime_seconds": 0.8624622999923304
+    },
+    {
+      "family": "trees",
+      "config_id": "T5",
+      "hyperparameters": {
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      "validation_log_rmse": 0.15031197577484268,
+      "runtime_seconds": 1.249240400007693
+    },
+    {
+      "family": "trees",
+      "config_id": "T6",
+      "hyperparameters": {
+        "max_depth": null,
+        "min_samples_leaf": 3,
+        "n_estimators": 200
+      },
+      "validation_log_rmse": 0.15228875107439638,
+      "runtime_seconds": 0.862228200014215
+    },
+    {
+      "family": "network",
+      "config_id": "N1",
+      "hyperparameters": {
+        "learning_rate": 0.0003,
+        "hidden_width": 64,
+        "batch_size": 64,
+        "weight_decay": 0.001,
+        "max_epochs": 400,
+        "patience": 35
+      },
+      "validation_log_rmse": 0.12479897368075786,
+      "best_epoch": 19,
+      "epochs_run": 54,
+      "runtime_seconds": 1.7200991999998223
+    },
+    {
+      "family": "network",
+      "config_id": "N2",
+      "hyperparameters": {
+        "learning_rate": 0.0003,
+        "hidden_width": 128,
+        "batch_size": 64,
+        "weight_decay": 0.001,
+        "max_epochs": 400,
+        "patience": 35
+      },
+      "validation_log_rmse": 0.1236512439430094,
+      "best_epoch": 25,
+      "epochs_run": 60,
+      "runtime_seconds": 0.6337116999784485
+    },
+    {
+      "family": "network",
+      "config_id": "N3",
+      "hyperparameters": {
+        "learning_rate": 0.001,
+        "hidden_width": 64,
+        "batch_size": 64,
+        "weight_decay": 0.001,
+        "max_epochs": 400,
+        "patience": 35
+      },
+      "validation_log_rmse": 0.12329735998527963,
+      "best_epoch": 8,
+      "epochs_run": 43,
+      "runtime_seconds": 0.4657308999740053
+    },
+    {
+      "family": "network",
+      "config_id": "N4",
+      "hyperparameters": {
+        "learning_rate": 0.001,
+        "hidden_width": 128,
+        "batch_size": 64,
+        "weight_decay": 0.001,
+        "max_epochs": 400,
+        "patience": 35
+      },
+      "validation_log_rmse": 0.12364536518783249,
+      "best_epoch": 7,
+      "epochs_run": 42,
+      "runtime_seconds": 0.5493877000117209
+    },
+    {
+      "family": "network",
+      "config_id": "N5",
+      "hyperparameters": {
+        "learning_rate": 0.003,
+        "hidden_width": 64,
+        "batch_size": 64,
+        "weight_decay": 0.001,
+        "max_epochs": 400,
+        "patience": 35
+      },
+      "validation_log_rmse": 0.12867270801901196,
+      "best_epoch": 11,
+      "epochs_run": 46,
+      "runtime_seconds": 0.5023977000091691
+    },
+    {
+      "family": "network",
+      "config_id": "N6",
+      "hyperparameters": {
+        "learning_rate": 0.003,
+        "hidden_width": 128,
+        "batch_size": 64,
+        "weight_decay": 0.001,
+        "max_epochs": 400,
+        "patience": 35
+      },
+      "validation_log_rmse": 0.12215501245324963,
+      "best_epoch": 5,
+      "epochs_run": 40,
+      "runtime_seconds": 0.5302969999902416
+    }
+  ],
+  "selected_tree": {
+    "family": "trees",
+    "config_id": "T5",
+    "hyperparameters": {
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "n_estimators": 200
+    },
+    "validation_log_rmse": 0.15031197577484268,
+    "runtime_seconds": 1.249240400007693
+  },
+  "selected_network": {
+    "family": "network",
+    "config_id": "N6",
+    "hyperparameters": {
+      "learning_rate": 0.003,
+      "hidden_width": 128,
+      "batch_size": 64,
+      "weight_decay": 0.001,
+      "max_epochs": 400,
+      "patience": 35
+    },
+    "validation_log_rmse": 0.12215501245324963,
+    "best_epoch": 5,
+    "epochs_run": 40,
+    "runtime_seconds": 0.5302969999902416
+  },
+  "test_evaluated": false
+}

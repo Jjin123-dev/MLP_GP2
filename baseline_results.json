@@ -1,0 +1,16 @@
+{
+  "stage": "constant_baseline",
+  "seed": 42,
+  "split_sizes": {
+    "train": 876,
+    "validation": 292,
+    "test": 292
+  },
+  "baseline": {
+    "mean_training_log_price": 12.029818979960378,
+    "constant_price": 167681.0563614316,
+    "validation_log_rmse": 0.39233778745412023
+  },
+  "test_evaluated": false,
+  "runtime_seconds": 0.0731132999935653
+}

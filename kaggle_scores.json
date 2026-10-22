@@ -1,0 +1,20 @@
+{
+  "baseline": {
+    "submission_file": "submission_baseline.csv",
+    "public_score": 0.41651,
+    "source": "User-provided Kaggle submissions screenshot",
+    "note": "External score; not a locally calculated metric."
+  },
+  "trees": {
+    "submission_file": "submission_tree.csv",
+    "public_score": 0.15338,
+    "source": "User-provided Kaggle submissions screenshot",
+    "note": "External score; not a locally calculated metric."
+  },
+  "neural_network": {
+    "submission_file": "submission_network.csv",
+    "public_score": 0.12406,
+    "source": "User-provided Kaggle submissions screenshot",
+    "note": "Best public score among the three final submissions."
+  }
+}
